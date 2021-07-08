@@ -1,0 +1,114 @@
+Using TensorFlow backend.
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/usr/local/lib/python3.6/dist-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Epoch:   0%|                                                                                       | 0/20 [00:00<?, ?it/s]Epoch:   5%|███▊                                                                       | 1/20 [23:40<7:29:49, 1420.47s/it]Epoch:  10%|███████▌                                                                   | 2/20 [47:52<7:09:00, 1430.01s/it]Epoch:  15%|██████████▉                                                              | 3/20 [1:12:12<6:47:43, 1439.04s/it]Epoch:  20%|██████████████▌                                                          | 4/20 [1:36:35<6:25:35, 1445.98s/it]Epoch:  25%|██████████████████▎                                                      | 5/20 [2:01:00<6:02:55, 1451.71s/it]Epoch:  30%|█████████████████████▉                                                   | 6/20 [2:25:26<5:39:44, 1456.05s/it]Epoch:  35%|█████████████████████████▌                                               | 7/20 [2:49:54<5:16:15, 1459.63s/it]Epoch:  40%|█████████████████████████████▏                                           | 8/20 [3:14:21<4:52:23, 1461.95s/it]Epoch:  45%|████████████████████████████████▊                                        | 9/20 [3:38:49<4:28:20, 1463.69s/it]Epoch:  50%|████████████████████████████████████                                    | 10/20 [4:03:17<4:04:10, 1465.05s/it]Epoch:  55%|███████████████████████████████████████▌                                | 11/20 [4:27:45<3:39:52, 1465.83s/it]Epoch:  60%|███████████████████████████████████████████▏                            | 12/20 [4:52:13<3:15:32, 1466.50s/it]Epoch:  65%|██████████████████████████████████████████████▊                         | 13/20 [5:16:40<2:51:06, 1466.65s/it]Epoch:  70%|██████████████████████████████████████████████████▍                     | 14/20 [5:41:08<2:26:42, 1467.07s/it]Epoch:  75%|██████████████████████████████████████████████████████                  | 15/20 [6:05:34<2:02:13, 1466.79s/it]Epoch:  80%|█████████████████████████████████████████████████████████▌              | 16/20 [6:30:01<1:37:47, 1466.89s/it]Epoch:  85%|█████████████████████████████████████████████████████████████▏          | 17/20 [6:54:29<1:13:21, 1467.13s/it]Epoch:  90%|██████████████████████████████████████████████████████████████████▌       | 18/20 [7:18:56<48:54, 1467.05s/it]Epoch:  95%|██████████████████████████████████████████████████████████████████████▎   | 19/20 [7:43:22<24:26, 1466.90s/it]Epoch: 100%|██████████████████████████████████████████████████████████████████████████| 20/20 [8:07:48<00:00, 1466.42s/it]Epoch: 100%|██████████████████████████████████████████████████████████████████████████| 20/20 [8:07:48<00:00, 1463.40s/it]
+Better speed can be achieved with apex installed from https://www.github.com/nvidia/apex.
+trn: 19306
+tst: 3778
+data example
+[['한국탁구가', '2000년', '시드니올림픽', '본선에', '남녀복식', '2개조씩을', '<tgt>', '파견할', '</tgt>', '수', '있게', '됐다.'], ['_', '_', '_', '_', '_', '_', '_', '파견.01', '_', '_', '_', '_'], ['B-ARG0', 'B-ARG2', 'I-ARG2', 'I-ARG2', 'B-ARG1', 'I-ARG1', 'X', 'O', 'X', 'O', 'B-AUX', 'B-AUX']]
+your model would be saved at /disk/teddysum/models/ko_srl/
+Train loss: 0.2980009137072257
+Train loss: 0.1923700333737888
+Train loss: 0.1579904605141355
+Train loss: 0.130308194799931
+Train loss: 0.10967967577273983
+Train loss: 0.09198916685931567
+Train loss: 0.07703634100938517
+Train loss: 0.06682698021066864
+Train loss: 0.05755735670861749
+Train loss: 0.0505240047533397
+Train loss: 0.046007728330146734
+Train loss: 0.04066376012508746
+Train loss: 0.03656969063766013
+Train loss: 0.034976931853197654
+Train loss: 0.030649525299490145
+Train loss: 0.0287736985391726
+Train loss: 0.02680828496583783
+Train loss: 0.0259495500589829
+Train loss: 0.022489138302760846
+Train loss: 0.023404469025597275
+...training is done
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-13.pt
+Validation loss: 0.32190356432041706
+Validation F1-Score: 0.6878826261346844
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-0.pt
+Validation loss: 0.21577797700310983
+Validation F1-Score: 0.6076626712328766
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-15.pt
+Validation loss: 0.3531935912539392
+Validation F1-Score: 0.6886604426728207
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-11.pt
+Validation loss: 0.29970933130354666
+Validation F1-Score: 0.6840497260851243
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-19.pt
+Validation loss: 0.3753178659663905
+Validation F1-Score: 0.6831735328205668
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-17.pt
+Validation loss: 0.36555663834393876
+Validation F1-Score: 0.6822356336919444
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-14.pt
+Validation loss: 0.3556837216874267
+Validation F1-Score: 0.6814172984682036
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-18.pt
+Validation loss: 0.3664433004924037
+Validation F1-Score: 0.6769278768654776
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-10.pt
+Validation loss: 0.2964192962761791
+Validation F1-Score: 0.6765532313456135
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-3.pt
+Validation loss: 0.22298947879305434
+Validation F1-Score: 0.6570106618386643
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-5.pt
+Validation loss: 0.2476103832963706
+Validation F1-Score: 0.6712271973466003
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-16.pt
+Validation loss: 0.36416016958121744
+Validation F1-Score: 0.6841912342252711
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-1.pt
+Validation loss: 0.2080077908888814
+Validation F1-Score: 0.6467555010976669
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-6.pt
+Validation loss: 0.2728302634646377
+Validation F1-Score: 0.6661842989301774
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-4.pt
+Validation loss: 0.21531688845051186
+Validation F1-Score: 0.6679723739820638
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-9.pt
+Validation loss: 0.31111481971521343
+Validation F1-Score: 0.6798826013078626
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-8.pt
+Validation loss: 0.2827866024766413
+Validation F1-Score: 0.6838716377609305
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-2.pt
+Validation loss: 0.20904462011383165
+Validation F1-Score: 0.6503425930844001
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-12.pt
+Validation loss: 0.3319989423768314
+Validation F1-Score: 0.6726627948810197
+model: /disk/teddysum/models/ko_srl/ko-srl-epoch-7.pt
+Validation loss: 0.27210656103903486
+Validation F1-Score: 0.6721260495490826
+result is written to ./eval_result/eval_result.txt

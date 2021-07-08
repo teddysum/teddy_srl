@@ -86,17 +86,13 @@ def conll2tagseq(data):
 # In[24]:
 
 
-def load_srl_data():
-    with open('/disk/data/corpus/koreanPropBank/revised/srl.dp_based.train.conll') as f:
+def load_srl_data(file_path):
+    with open(file_path) as f:
         d = f.readlines()    
 #     trn = raw2tagseq(d)
-    trn = conll2tagseq(d)
-    with open('/disk/data/corpus/koreanPropBank/revised/srl.dp_based.test.conll') as f:
-        d = f.readlines()    
-#     tst = raw2tagseq(d)
-    tst = conll2tagseq(d)
-    
-    return trn, tst
+    data = conll2tagseq(d)
+
+    return data
 
 
 # In[79]:
@@ -143,11 +139,10 @@ def data2tgt_data(input_data):
 # In[80]:
 
 
-def load_srl_data_for_bert():
-    trn_ori, tst_ori = load_srl_data()
+def load_srl_data_for_bert(file_path):
+    d_ori = load_srl_data(file_path)
     
-    trn = data2tgt_data(trn_ori)
-    tst = data2tgt_data(tst_ori)
+    data = data2tgt_data(d_ori)
     
-    return trn, tst
+    return data
 

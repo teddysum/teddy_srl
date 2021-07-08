@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[13]:
+# In[26]:
 
 
 import json
@@ -16,12 +16,15 @@ from torch.optim import Adam
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+import pygraphviz as pgv
+from IPython.display import Image
+
 
 # In[2]:
 
 
-from BERT_for_Korean_SRL import bert_srl
-from BERT_for_Korean_SRL import preprocessor
+from teddy_srl import srl_model
+from teddy_srl import preprocessor
 
 
 # In[3]:
@@ -33,7 +36,102 @@ except:
     dir_path = '.'
 
 
-# In[21]:
+# In[ ]:
+
+
+def remove_josa(phrase):
+    from konlpy.tag import Kkma
+    kkma = Kkma()
+    import jpype
+    jpype.attachThreadToJVM()
+    
+    tokens = phrase.split(' ')
+
+    result = []
+    for i in range(len(tokens)):
+        token = tokens[i]
+        if i < len(tokens)-1:
+            result.append(token)
+        else:
+            m = kkma.pos(tokens[i])
+            if m[-1][-1].startswith('J'):
+                m.pop(-1)
+                token = ''.join([t for t,p in m])
+            result.append(token)
+    result = ' '.join(result)
+    return result
+
+
+# In[ ]:
+
+
+def conll2graph(conll, sent_id=False, language='ko'):
+    triples = []
+    n = 0
+    for anno in conll:
+        tokens, targets, args = anno[0],anno[1],anno[2]
+        
+        target_id = -1
+        for i in range(len(targets)):
+            t = targets[i]
+            if t != '_':
+                target_id = i
+                target = t
+                
+#         if target:
+#             if type(sent_id) != bool:
+#                 triple = ('predicate'+'#'+str(sent_id)+'-'+str(n)+':'+frame, 'lu', lu_token)
+#                 triples.append(triple)
+#             else:
+#                 triple = ('predicate'+'#'+str(n)+':'+frame, 'lu', lu_token)
+#                 triples.append(triple)
+
+        if target:
+            sbj = False
+            pred_obj_tuples = []
+            
+            for idx in range(len(args)):
+                arg_tag = args[idx]
+                arg_tokens = []
+                if arg_tag.startswith('B'):
+                    fe_tag = arg_tag.split('-')[1]
+                    arg_tokens.append(tokens[idx])
+                    next_idx = idx + 1
+                    while next_idx < len(args) and args[next_idx] == 'I-'+fe_tag:
+                        arg_tokens.append(tokens[next_idx])
+                        next_idx +=1
+                    arg_text = ' '.join(arg_tokens)
+                    
+                    if language =='ko':
+                        arg_text = remove_josa(arg_text)
+                    else:
+                        pass
+                    fe = fe_tag
+                    
+                    rel = 'arg:'+fe
+
+                    if rel == 'S':
+                        pass
+                    else:
+                        p = rel
+                        o = arg_text
+                        pred_obj_tuples.append( (p,o) )
+
+            for p, o in pred_obj_tuples:
+                if sbj:
+                    s = sbj
+                else:
+                    if type(sent_id) != bool:
+                        s = 'predicate'+'#'+str(sent_id)+'-'+str(n)+':'+target
+                    else:
+                        s = 'predicate'+'#'+str(n)+':'+target
+                triple = (s, p, o)
+                triples.append(triple)
+        n +=1
+    return triples
+
+
+# In[4]:
 
 
 class srl_parser():
@@ -48,7 +146,7 @@ class srl_parser():
         except:
             print('model dir', model_dir, 'is not valid ')
             
-        self.bert_io = bert_srl.for_BERT(mode='test')
+        self.bert_io = srl_model.for_BERT(mode='test')
         self.batch_size = batch_size
         
     def ko_srl_parser(self, text):
@@ -89,7 +187,7 @@ class srl_parser():
                 
         pred_arg_tags_old = [[self.bert_io.idx2tag[p_i] for p_i in p] for p in pred_args]
         
-        result = []
+        conll = []
         for b_idx in range(len(pred_arg_tags_old)):
             pred_arg_tag_old = pred_arg_tags_old[b_idx]
             pred_arg_tag = []
@@ -105,23 +203,62 @@ class srl_parser():
             instance.append(input_data[b_idx][1])
             instance.append(pred_arg_tag)
             
-            result.append(instance)
+            conll.append(instance)
+        
+        graph = conll2graph(conll)
+        
+        result = {}
+        result['conll'] = conll
+        result['graph'] = graph
+        
+        
         
         return result
-            
 
 
-# In[22]:
+# In[29]:
 
 
-# p = srl_parser(model_dir='/disk_4/BERT_for_Korean_SRL/models/ko-srl-epoch-4.pt')
+# def visualize(graph):
+    
+#     G = pgv.AGraph(directed=True, overlap=False)
+#     labels = {}
+    
+#     for s,p,o in graph:
+#         if '-' in p:
+#             p = 'arg:'+p.split('-')[-1]
+#         G.add_edge(s,o, label=p)
+        
+#     G.layout()    
+#     G.draw('dummy.png')    
 
 
-# In[23]:
+# In[18]:
+
+
+# p = srl_parser(model_dir='/disk/teddysum/models/ko_srl/ko-srl-epoch-19.pt')
+
+
+# In[30]:
+
+
+# text = '헤밍웨이는 1899년 7월 21일 미국 일리노이에서 태어났고 62세에 자살로 사망했다.'
+
+# d = p.ko_srl_parser(text)
+# for i in d:
+#     print(i)
+    
+# graph = conll2graph(d)
+# visualize(graph)
+# Image('dummy.png')
+
+
+# In[24]:
 
 
 # text = '애플은 미국에서 태어난 스티브 잡스가 설립한 컴퓨터 회사이다.'
-
+# text = '민영이가 유정이에게 3천 원을 빌려주고, 유정이가 은지에게 2천 원을 빌려주고, 은지가 민영이에게 3천원을 빌려 주었더니 세 사람이 가진 돈은 똑같이 5천 원이 되었습니다.'
 # d = p.ko_srl_parser(text)
-# print(d)
+# for i in d:
+#     print(i)
 

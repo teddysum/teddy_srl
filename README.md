@@ -72,8 +72,35 @@ where the first annotation is a SRL for the verb '태어나.v', and second is fo
 The original dataset (Lee et al., 2015) is based on the dependency-based SRL. Each thematic role (e.g. ARG0) is annotated for a token which is a syntactic head of argument. 
 
 ## Performance
-<img src="./fig.png" width="40%" height="40%">
-The model is evaluated for argument identification task, in terms of F1. At the epoch 5, F1 score is 79.83%. The model is available now. To the best of our knowledge, the state-of-the-art model is Bae et al., (2017), where F1 is 78.84%. 
+
+The model is evaluated for argument identification task, in terms of Accuracy and F1. 
+
+Accuracy: 0.8418085233506785
+F1: 0.6831735328205668
+             precision    recall  f1-score   support
+
+       ARG2       0.71      0.71      0.71       911
+       ARG1       0.74      0.76      0.75      3333
+       ARG0       0.75      0.73      0.74      1444
+   ARGM_CAU       0.25      0.33      0.29       187
+   ARGM_DIS       0.37      0.37      0.37       546
+        AUX       0.96      0.96      0.96       758
+   ARGM_LOC       0.50      0.66      0.57       206
+   ARGM_TMP       0.66      0.68      0.67       882
+   ARGM_EXT       0.68      0.63      0.66       202
+   ARGM_MNR       0.50      0.61      0.55       201
+   ARGM_CND       0.35      0.47      0.40        81
+   ARGM_ADV       0.43      0.46      0.45       166
+   ARGM_INS       0.22      0.31      0.26       119
+   ARGM_PRP       0.38      0.54      0.44        70
+   ARGM_PRD       0.10      0.16      0.12        56
+       ARG3       0.65      0.53      0.58        78
+   ARGM_DIR       0.14      0.14      0.14        14
+   ARGM_NEG       0.00      0.00      0.00         3
+       ARGA       0.77      0.71      0.74        28
+
+avg / total       0.68      0.70      0.69      9285
+ 
 
 ## REFERENCE
 Changki Lee, Soojong Lim, Hyunki Kim. Korean Semantic Role Labeling Using Structured SVM. In Proceddings of the KIISE Korea Computer Congress 2015, 42.2: 220-226. (in Korean)

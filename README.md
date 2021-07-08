@@ -1,7 +1,7 @@
-# BERT_for_Korean_SRL
+# Teddy_SRL
 
 ## About
-BERT_for_Korean_SRL is a semantic role labeling (SRL) module for Korean text. 
+Teddy_SRL is a semantic role labeling (SRL) module for Korean text. 
 It is based on BERT model (`bert-base-multilingual-cased`) , and was trained by using the Korean PropBank data which is modified by Lee et al., (2015)
 
 ## prerequisite

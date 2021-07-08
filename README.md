@@ -76,7 +76,10 @@ The original dataset (Lee et al., 2015) is based on the dependency-based SRL. Ea
 The model is evaluated for argument identification task, in terms of Accuracy and F1. 
 
 Accuracy: 0.8418085233506785
+
 F1: 0.6831735328205668
+
+```
              precision    recall  f1-score   support
 
        ARG2       0.71      0.71      0.71       911
@@ -100,7 +103,7 @@ F1: 0.6831735328205668
        ARGA       0.77      0.71      0.74        28
 
 avg / total       0.68      0.70      0.69      9285
- 
+```
 
 ## REFERENCE
 Changki Lee, Soojong Lim, Hyunki Kim. Korean Semantic Role Labeling Using Structured SVM. In Proceddings of the KIISE Korea Computer Congress 2015, 42.2: 220-226. (in Korean)

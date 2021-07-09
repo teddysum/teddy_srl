@@ -6,7 +6,7 @@ from flask import Flask
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
 
-from frameBERT import frame_parser
+from teddy_srl import parser
 
 app = Flask(__name__)
 CORS(app)
@@ -25,7 +25,7 @@ args = parser.parse_args()
 
 # In[1]:
 
-f_parser = frame_parser.FrameParser(model_path=args.model, masking=True, language=args.language)
+p = parser.srl_parser(model_dir=args.model)
 
 class WebService(Resource):
     def __init__(self):
@@ -35,20 +35,8 @@ class WebService(Resource):
         try:
             req_parser = reqparse.RequestParser()
             req_parser.add_argument('text', type=str)
-            req_parser.add_argument('sent_id', type=str)
-            req_parser.add_argument('result_format', type=str)
-            args = req_parser.parse_args()
-            print(args)
-            if not args['sent_id']:
-                sent_id = False
-            else:
-                sent_id = args['sent_id']
-            if not args['result_format']:
-                result_format = 'graph'
-            else:
-                result_format = args['result_format']
-                
-            result = f_parser.parser(args['text'], sent_id=sent_id, result_format=result_format)
+            args = req_parser.parse_args()               
+            result = p.ko_srl_parser(args['text'])
 
             return result, 200
         except KeyboardInterrupt:
@@ -56,5 +44,5 @@ class WebService(Resource):
         except Exception as e:
             return {'error':str(e)}
 
-api.add_resource(WebService, '/frameBERT')
+api.add_resource(WebService, '/teddy_srl')
 app.run(debug=True, host='0.0.0.0', port=args.port)

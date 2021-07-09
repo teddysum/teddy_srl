@@ -17,11 +17,11 @@ api = Api(app)
 
 import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--model', required=True)
-parser.add_argument('--language', required=False, default='ko')
-parser.add_argument('--port', required=False, default=1106)
-args = parser.parse_args()
+argparser = argparse.ArgumentParser()
+argparser.add_argument('--model', required=True)
+argparser.add_argument('--language', required=False, default='ko')
+argparser.add_argument('--port', required=False, default=1106)
+args = argparser.parse_args()
 
 # In[1]:
 
@@ -35,7 +35,8 @@ class WebService(Resource):
         try:
             req_parser = reqparse.RequestParser()
             req_parser.add_argument('text', type=str)
-            args = req_parser.parse_args()               
+            args = req_parser.parse_args()            
+            print(args)
             result = p.ko_srl_parser(args['text'])
 
             return result, 200
@@ -45,4 +46,4 @@ class WebService(Resource):
             return {'error':str(e)}
 
 api.add_resource(WebService, '/teddy_srl')
-app.run(debug=True, host='0.0.0.0', port=args.port)
+app.run(debug=True, host='0.0.0.0', port=int(args.port))

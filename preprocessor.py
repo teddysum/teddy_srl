@@ -106,25 +106,3 @@ def preprocessing(text):
 
             result.append(instance)
     return result
-
-
-# In[94]:
-
-
-# text = '애플은 스티브 잡스와 스티브 워즈니악과 론 웨인이 1976년에 설립한 컴퓨터 회사이다.'
-# text= '애플은 미국에서 태어난 스티브 잡스가 설립한 컴퓨터 회사이다.'
-
-# d = preprocessing(text)
-# print(d)
-
-# z = data2tgt_data(d)
-# print(z)
-
-
-# In[61]:
-
-
-# text = '설립한'
-# d = pred_identifier(text)
-# print(d)
-

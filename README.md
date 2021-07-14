@@ -105,7 +105,7 @@ def visualize(graph):
 visualize(parsed['graph'])
 Image('dummy.png')
 ```
-<img src="./images/fig1.png" width="80%" height="80%">
+<img src="./fig1.png" width="80%" height="80%">
 
 
 ## Performance

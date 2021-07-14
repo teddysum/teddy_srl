@@ -35,8 +35,7 @@ class WebService(Resource):
         try:
             req_parser = reqparse.RequestParser()
             req_parser.add_argument('text', type=str)
-            args = req_parser.parse_args()            
-            print(args)
+            args = req_parser.parse_args()
             result = p.ko_srl_parser(args['text'])
 
             return result, 200

@@ -1,33 +1,42 @@
 
 # coding: utf-8
 
-# In[26]:
+# In[1]:
+
+
+import torch
+from transformers import *
+
+
+# In[2]:
 
 
 import json
 import sys
 sys.path.insert(0,'../')
+
 from konlpy.tag import Kkma
 
 import numpy as np
-import torch
+
 from torch import nn
 from torch.optim import Adam
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 import pygraphviz as pgv
 from IPython.display import Image
 
 
-# In[2]:
+# In[3]:
 
 
 from teddy_srl import srl_model
 from teddy_srl import preprocessor
 
 
-# In[3]:
+# In[4]:
 
 
 try:
@@ -36,7 +45,7 @@ except:
     dir_path = '.'
 
 
-# In[ ]:
+# In[5]:
 
 
 def remove_josa(phrase):
@@ -55,14 +64,15 @@ def remove_josa(phrase):
         else:
             m = kkma.pos(tokens[i])
             if m[-1][-1].startswith('J'):
-                m.pop(-1)
-                token = ''.join([t for t,p in m])
+                josa = m[-1][0]                
+                josa_index = token.rfind(josa)
+                token = token[:josa_index]
             result.append(token)
     result = ' '.join(result)
     return result
 
 
-# In[ ]:
+# In[6]:
 
 
 def conll2graph(conll, sent_id=False, language='ko'):
@@ -131,20 +141,20 @@ def conll2graph(conll, sent_id=False, language='ko'):
     return triples
 
 
-# In[4]:
+# In[7]:
 
 
 class srl_parser():
     
-    def __init__(self, model_dir=dir_path+'/model/model.pt', batch_size=1):
-        try:
-            self.model = torch.load(model_dir)
-            self.model.to(device);
-            self.model.eval()
-        except KeyboardInterrupt:
-            raise
-        except:
-            print('model dir', model_dir, 'is not valid ')
+    def __init__(self, model_dir=False, batch_size=1):
+#         try:
+        self.model = BertForTokenClassification.from_pretrained(model_dir)
+        self.model.to(device);
+        self.model.eval()
+#         except KeyboardInterrupt:
+#             raise
+#         except:
+#             print('model dir', model_dir, 'is not valid ')
             
         self.bert_io = srl_model.for_BERT(mode='test')
         self.batch_size = batch_size
@@ -162,8 +172,10 @@ class srl_parser():
             b_input_ids, b_input_orig_tok_to_maps, b_input_masks = batch
             
             with torch.no_grad():
-                logits = self.model(b_input_ids, token_type_ids=None,
+                outputs = self.model(b_input_ids, token_type_ids=None,
                                attention_mask=b_input_masks)
+                logits = outputs.logits
+                
             logits = logits.detach().cpu().numpy()
             b_pred_args = [list(p) for p in np.argmax(logits, axis=2)]
             
@@ -214,51 +226,4 @@ class srl_parser():
         
         
         return result
-
-
-# In[29]:
-
-
-# def visualize(graph):
-    
-#     G = pgv.AGraph(directed=True, overlap=False)
-#     labels = {}
-    
-#     for s,p,o in graph:
-#         if '-' in p:
-#             p = 'arg:'+p.split('-')[-1]
-#         G.add_edge(s,o, label=p)
-        
-#     G.layout()    
-#     G.draw('dummy.png')    
-
-
-# In[18]:
-
-
-# p = srl_parser(model_dir='/disk/teddysum/models/ko_srl/ko-srl-epoch-19.pt')
-
-
-# In[30]:
-
-
-# text = '헤밍웨이는 1899년 7월 21일 미국 일리노이에서 태어났고 62세에 자살로 사망했다.'
-
-# d = p.ko_srl_parser(text)
-# for i in d:
-#     print(i)
-    
-# graph = conll2graph(d)
-# visualize(graph)
-# Image('dummy.png')
-
-
-# In[24]:
-
-
-# text = '애플은 미국에서 태어난 스티브 잡스가 설립한 컴퓨터 회사이다.'
-# text = '민영이가 유정이에게 3천 원을 빌려주고, 유정이가 은지에게 2천 원을 빌려주고, 은지가 민영이에게 3천원을 빌려 주었더니 세 사람이 가진 돈은 똑같이 5천 원이 되었습니다.'
-# d = p.ko_srl_parser(text)
-# for i in d:
-#     print(i)
 

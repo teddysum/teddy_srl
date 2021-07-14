@@ -25,9 +25,6 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-import pygraphviz as pgv
-from IPython.display import Image
-
 
 # In[3]:
 

@@ -23,7 +23,9 @@ git clone https://github.com/teddysum/teddy_srl.git
 **Download the pretrained model**
 
 Download two pretrained model files to `{your_model_dir}` (e.g. `/home/model/bert_ko_srl_model.pt`). 
-* **Download:** ([click](https://drive.google.com/file/d/1lqe2S5iPguOwWVQ3aLqOoH4sBuGa1498/view?usp=sharing))
+* **Download:** ([click](https://drive.google.com/drive/folders/1cnVStyc1CDCV1PkkJAkdmGTtiAEmplUL?usp=sharing))
+
+**Note** that there are two files: `config.json` and `pytorch_model.bin`
 
 **Import srl_based_parser (in your python code)**
 (make sure that your code is in a parent folder of teddy_srl)

@@ -30,7 +30,7 @@ Download two pretrained model files to `{your_model_dir}` (e.g. `/home/model/ber
 **Import srl_based_parser (in your python code)**
 (make sure that your code is in a parent folder of teddy_srl)
 ```
-from BERT_for_Korean_SRL import parser
+from teddy_srl import parser
 
 model_dir = {your_model_dir} # absolute_path (e.g. /home/model/teddy_srl)
 srl_parser = parser.srl_parser(model_dir=model_dir)

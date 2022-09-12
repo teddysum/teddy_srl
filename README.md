@@ -141,6 +141,39 @@ avg / total       0.66      0.70      0.68      9281
 
 ```
 
+## Running REST API service
+
+By running the code `restApp.py`, you can make a standalone REST service at your own server.
+
+### How to run REST API service
+```
+python restApp.py --port {port number} --model {model path}
+```
+**Example**
+```
+python restApp.py --port 9001 --model ./models/en
+```
+Then, you can use it with the `POST` method to the url `XXX.XXX.XXX.XXX:9001/teddy_srl`. `XXX.XXX.XXX.XXX` is your IP address. 
+
+```
+import request
+
+url = 'http://localhost:9001/teddy_srl'
+response = requests.post(url, data=d)
+a = response.json()
+pprint(a)
+```
+
+### Input format
+```
+# JSON format
+{
+ "text": "Hemingway was born on July 21, 1899 in Illinois, and died of suicide at the age of 62.",
+ "result_format": "all"
+}
+```
+
+
 ## REFERENCE
 Changki Lee, Soojong Lim, Hyunki Kim. Korean Semantic Role Labeling Using Structured SVM. In Proceddings of the KIISE Korea Computer Congress 2015, 42.2: 220-226. (in Korean)
 

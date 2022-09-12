@@ -1,0 +1,529 @@
+loading configuration file /home/hahmyg/models/teddy_srl/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-multilingual-cased",
+  "architectures": [
+    "BertForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5",
+    "6": "LABEL_6",
+    "7": "LABEL_7",
+    "8": "LABEL_8",
+    "9": "LABEL_9",
+    "10": "LABEL_10",
+    "11": "LABEL_11",
+    "12": "LABEL_12",
+    "13": "LABEL_13",
+    "14": "LABEL_14",
+    "15": "LABEL_15",
+    "16": "LABEL_16",
+    "17": "LABEL_17",
+    "18": "LABEL_18",
+    "19": "LABEL_19",
+    "20": "LABEL_20",
+    "21": "LABEL_21",
+    "22": "LABEL_22",
+    "23": "LABEL_23",
+    "24": "LABEL_24",
+    "25": "LABEL_25",
+    "26": "LABEL_26",
+    "27": "LABEL_27",
+    "28": "LABEL_28",
+    "29": "LABEL_29",
+    "30": "LABEL_30",
+    "31": "LABEL_31",
+    "32": "LABEL_32",
+    "33": "LABEL_33",
+    "34": "LABEL_34",
+    "35": "LABEL_35",
+    "36": "LABEL_36",
+    "37": "LABEL_37",
+    "38": "LABEL_38",
+    "39": "LABEL_39",
+    "40": "LABEL_40"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_10": 10,
+    "LABEL_11": 11,
+    "LABEL_12": 12,
+    "LABEL_13": 13,
+    "LABEL_14": 14,
+    "LABEL_15": 15,
+    "LABEL_16": 16,
+    "LABEL_17": 17,
+    "LABEL_18": 18,
+    "LABEL_19": 19,
+    "LABEL_2": 2,
+    "LABEL_20": 20,
+    "LABEL_21": 21,
+    "LABEL_22": 22,
+    "LABEL_23": 23,
+    "LABEL_24": 24,
+    "LABEL_25": 25,
+    "LABEL_26": 26,
+    "LABEL_27": 27,
+    "LABEL_28": 28,
+    "LABEL_29": 29,
+    "LABEL_3": 3,
+    "LABEL_30": 30,
+    "LABEL_31": 31,
+    "LABEL_32": 32,
+    "LABEL_33": 33,
+    "LABEL_34": 34,
+    "LABEL_35": 35,
+    "LABEL_36": 36,
+    "LABEL_37": 37,
+    "LABEL_38": 38,
+    "LABEL_39": 39,
+    "LABEL_4": 4,
+    "LABEL_40": 40,
+    "LABEL_5": 5,
+    "LABEL_6": 6,
+    "LABEL_7": 7,
+    "LABEL_8": 8,
+    "LABEL_9": 9
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.21.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 119547
+}
+
+loading weights file /home/hahmyg/models/teddy_srl/pytorch_model.bin
+All model checkpoint weights were used when initializing BertForTokenClassification.
+
+All the weights of BertForTokenClassification were initialized from the model checkpoint at /home/hahmyg/models/teddy_srl.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForTokenClassification for predictions without further training.
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/vocab.txt from cache at /home/hahmyg/.cache/huggingface/transformers/eff018e45de5364a8368df1f2df3461d506e2a111e9dd50af1fae061cd460ead.6c5b6600e968f4b5e08c86d8891ea99e51537fc2bf251435fb46922e8f7a7b29
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/tokenizer_config.json from cache at /home/hahmyg/.cache/huggingface/transformers/f55e7a2ad4f8d0fff2733b3f79777e1e99247f2e4583703e92ce74453af8c235.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+loading configuration file https://huggingface.co/bert-base-multilingual-cased/resolve/main/config.json from cache at /home/hahmyg/.cache/huggingface/transformers/6c4a5d81a58c9791cdf76a09bce1b5abfb9cf958aebada51200f4515403e5d08.0fe59f3f4f1335dadeb4bce8b8146199d9083512b50d07323c1c319f96df450c
+Model config BertConfig {
+  "_name_or_path": "bert-base-multilingual-cased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.21.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 119547
+}
+
+ * Serving Flask app "restApp" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://121.134.238.181:9001/ (Press CTRL+C to quit)
+ * Restarting with watchdog (inotify)
+loading configuration file /home/hahmyg/models/teddy_srl/config.json
+Model config BertConfig {
+  "_name_or_path": "bert-base-multilingual-cased",
+  "architectures": [
+    "BertForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5",
+    "6": "LABEL_6",
+    "7": "LABEL_7",
+    "8": "LABEL_8",
+    "9": "LABEL_9",
+    "10": "LABEL_10",
+    "11": "LABEL_11",
+    "12": "LABEL_12",
+    "13": "LABEL_13",
+    "14": "LABEL_14",
+    "15": "LABEL_15",
+    "16": "LABEL_16",
+    "17": "LABEL_17",
+    "18": "LABEL_18",
+    "19": "LABEL_19",
+    "20": "LABEL_20",
+    "21": "LABEL_21",
+    "22": "LABEL_22",
+    "23": "LABEL_23",
+    "24": "LABEL_24",
+    "25": "LABEL_25",
+    "26": "LABEL_26",
+    "27": "LABEL_27",
+    "28": "LABEL_28",
+    "29": "LABEL_29",
+    "30": "LABEL_30",
+    "31": "LABEL_31",
+    "32": "LABEL_32",
+    "33": "LABEL_33",
+    "34": "LABEL_34",
+    "35": "LABEL_35",
+    "36": "LABEL_36",
+    "37": "LABEL_37",
+    "38": "LABEL_38",
+    "39": "LABEL_39",
+    "40": "LABEL_40"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_10": 10,
+    "LABEL_11": 11,
+    "LABEL_12": 12,
+    "LABEL_13": 13,
+    "LABEL_14": 14,
+    "LABEL_15": 15,
+    "LABEL_16": 16,
+    "LABEL_17": 17,
+    "LABEL_18": 18,
+    "LABEL_19": 19,
+    "LABEL_2": 2,
+    "LABEL_20": 20,
+    "LABEL_21": 21,
+    "LABEL_22": 22,
+    "LABEL_23": 23,
+    "LABEL_24": 24,
+    "LABEL_25": 25,
+    "LABEL_26": 26,
+    "LABEL_27": 27,
+    "LABEL_28": 28,
+    "LABEL_29": 29,
+    "LABEL_3": 3,
+    "LABEL_30": 30,
+    "LABEL_31": 31,
+    "LABEL_32": 32,
+    "LABEL_33": 33,
+    "LABEL_34": 34,
+    "LABEL_35": 35,
+    "LABEL_36": 36,
+    "LABEL_37": 37,
+    "LABEL_38": 38,
+    "LABEL_39": 39,
+    "LABEL_4": 4,
+    "LABEL_40": 40,
+    "LABEL_5": 5,
+    "LABEL_6": 6,
+    "LABEL_7": 7,
+    "LABEL_8": 8,
+    "LABEL_9": 9
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.21.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 119547
+}
+
+loading weights file /home/hahmyg/models/teddy_srl/pytorch_model.bin
+All model checkpoint weights were used when initializing BertForTokenClassification.
+
+All the weights of BertForTokenClassification were initialized from the model checkpoint at /home/hahmyg/models/teddy_srl.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForTokenClassification for predictions without further training.
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/vocab.txt from cache at /home/hahmyg/.cache/huggingface/transformers/eff018e45de5364a8368df1f2df3461d506e2a111e9dd50af1fae061cd460ead.6c5b6600e968f4b5e08c86d8891ea99e51537fc2bf251435fb46922e8f7a7b29
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/special_tokens_map.json from cache at None
+loading file https://huggingface.co/bert-base-multilingual-cased/resolve/main/tokenizer_config.json from cache at /home/hahmyg/.cache/huggingface/transformers/f55e7a2ad4f8d0fff2733b3f79777e1e99247f2e4583703e92ce74453af8c235.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+loading configuration file https://huggingface.co/bert-base-multilingual-cased/resolve/main/config.json from cache at /home/hahmyg/.cache/huggingface/transformers/6c4a5d81a58c9791cdf76a09bce1b5abfb9cf958aebada51200f4515403e5d08.0fe59f3f4f1335dadeb4bce8b8146199d9083512b50d07323c1c319f96df450c
+Model config BertConfig {
+  "_name_or_path": "bert-base-multilingual-cased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.21.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 119547
+}
+
+ * Debugger is active!
+ * Debugger PIN: 712-282-519
+121.134.238.181 - - [04/Sep/2022 14:25:33] "POST /teddy_srl HTTP/1.1" 200 -
+121.134.238.181 - - [04/Sep/2022 14:25:46] "POST /teddy_srl HTTP/1.1" 200 -
+60.241.53.60 - - [05/Sep/2022 03:36:11] "POST /RPC2 HTTP/1.1" 404 -
+94.102.61.49 - - [05/Sep/2022 07:00:03] "GET / HTTP/1.1" 404 -
+198.199.95.61 - - [05/Sep/2022 09:56:56] "GET / HTTP/1.1" 404 -
+194.38.23.170 - - [06/Sep/2022 00:16:55] code 400, message Bad request version ('À\x13À')
+194.38.23.170 - - [06/Sep/2022 00:16:55] " î  êRÂl¹ âëùËzy¸.´P6Â¾®lmE,½ éªj+PKÁ\¤ëÞ~R?Ã>ñi W &Ì©Ì¨À+À/À,À0À	ÀÀ" HTTPStatus.BAD_REQUEST -
+194.38.23.170 - - [06/Sep/2022 00:17:27] "GET /weblogictestxd HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:39:57] "GET / HTTP/1.0" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:02] "GET / HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:02] "SSTP_DUPLEX_POST /sra_{BA195980-CD49-458b-9E23-C84EE0ADCD75}/ HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:02] "GET /Portal0000.htm HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:02] "GET /8fkS HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:02] "GET /Portal/Portal.mwsl HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:03] "GET /.git/HEAD HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:03] "GET /CSS/Miniweb.css HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:03] "GET /__Additional HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:03] "GET / HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:04] "GET /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42 HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:04] "POST /sdk HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:04] code 400, message Bad request version ("\x18\x04S:+,¹³\x97Ö\x0e\x16ÞðE<\x1a¨µÓ2¡¥±£9;ë\x87\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+80.85.85.235 - - [06/Sep/2022 05:40:04] "  üÔ4 rôsWa×ÀãÛwÐÐõþtÈ¯m÷ö.ÂçÙ¥ ÅS:+,¹³ÖÞðE<¨µÓ2¡¥±£9;ë  3 9 5 /À,À0 £ Ì©Ì¨ÌªÀ¯À­À£ÀÀ]ÀaÀWÀSÀ+À/ ¢ À®À¬À¢ÀÀ\À`ÀVÀRÀ$À( k jÀsÀw Ä ÃÀ#À' g @ÀrÀv ¾ ½À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:04] code 400, message Bad request version ("âPf²\x8f\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+80.85.85.235 - - [06/Sep/2022 05:40:04] "  üTKgxºw÷°º4yXeÒñÕSò'´] yämóX$Øl0[ÂàBÙgwÕÎ-G âPf²  3 9 5 /À,À0 £ Ì©Ì¨ÌªÀ¯À­À£ÀÀ]ÀaÀWÀSÀ+À/ ¢ À®À¬À¢ÀÀ\À`ÀVÀRÀ$À( k jÀsÀw Ä ÃÀ#À' g @ÀrÀv ¾ ½À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:04] "GET /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000 HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:04] "GET /pools/default/buckets HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:05] "GET /nmaplowercheck1662442802 HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:05] code 400, message Bad request version ("C\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+80.85.85.235 - - [06/Sep/2022 05:40:05] "  ü bÞ8¬wöV@¢;êÅ1ß^)lÀhn. ßë]QëÀ±½°E/JºpÚ8´AßøÿÎ¶cW¡C  3 9 5 /À,À0 £ Ì©Ì¨ÌªÀ¯À­À£ÀÀ]ÀaÀWÀSÀ+À/ ¢ À®À¬À¢ÀÀ\À`ÀVÀRÀ$À( k jÀsÀw Ä ÃÀ#À' g @ÀrÀv ¾ ½À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:05] code 400, message Bad request version ("\x99Yµ»HÖ\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+80.85.85.235 - - [06/Sep/2022 05:40:05] "  ü~ØÎì¼ÍS`@¿Çí&5 "Tknô¡è² f±ekWÒÒ?ò³«ÝyF©ËZva Yµ»HÖ  3 9 5 /À,À0 £ Ì©Ì¨ÌªÀ¯À­À£ÀÀ]ÀaÀWÀSÀ+À/ ¢ À®À¬À¢ÀÀ\À`ÀVÀRÀ$À( k jÀsÀw Ä ÃÀ#À' g @ÀrÀv ¾ ½À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:05] "GET /pools HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:05] "GET /HNAP1 HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:05] "GET / HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:06] "GET /favicon.ico HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:08] code 400, message Bad HTTP/0.9 request type ('\x804\x01\x00\x02\x00\x1b\x00\x00\x00\x10\x00\x00\x00\x01\x00\x80\x05\x00\x80\x08\x00\x80\x04\x00\x80\x02\x00\x80\x03\x00\x80\x07\x00À\x06\x00@ñ')
+80.85.85.235 - - [06/Sep/2022 05:40:08] "4               À @ñYãÑÇ\3½:c¤Æ" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad request version ("èx\x1a\x16\x95¾ÙgJ´\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+80.85.85.235 - - [06/Sep/2022 05:40:13] "  ü¼6±kD¸->§þ°Â3S¾ùl>­kÖíÒ c@ßÔ¢á8ï¦	¹Ê[[Fµèx¾ÙgJ´  3 9 5 /À,À0 £ Ì©Ì¨ÌªÀ¯À­À£ÀÀ]ÀaÀWÀSÀ+À/ ¢ À®À¬À¢ÀÀ\À`ÀVÀRÀ$À( k jÀsÀw Ä ÃÀ#À' g @ÀrÀv ¾ ½À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad request version ('\x00/À´À\x9e\x00\x15\x00¥ÀrÀqÀZ\x00UÀ\x9bÀ\x9a\x00¦\x00,À')
+80.85.85.235 - - [06/Sep/2022 05:40:13] "N JcÝ=W,w¯j¸ÛF Zðõ¹ýM"6³&Å ÀÀ R i & NÀÀ©   O ZÀL g W  Ã  À$   ±À^ÀQÀ( ½Àc 	 © S |Ì®À°Àv 8 ´À @ À  j  a < À! 0À- ¸Ì© I À4Ì«  LÀ2  > b ' J "ÀS À] ¬À>Ài VÀÀ¢À=  ; F )  YÀÀ - «  A Àn  ÅÀU ÀÀÀ¨ À\ À  QÀ À?ÀÀKÀ< 1À¤ T Às ÀyÀuÀz º \À. ¹À	 ÀÀ G  À8À  Ç ÆÀ| ÀÀ ¨þþÀC  Ð ¶À  (À'ÐÐÌ­ ¢Ìª k ÀIÌ¨À 7ÌÀ7ÌÀÀÀ}ÀµÀÀ³ ¿À²À± À  wÀwÀkÀ®À­À¬À«ÀªÀ§ ³ §À0À£À_ ·À¡À  /À´À  ¥ÀrÀqÀZ UÀÀ ¦ ,À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] "GET / HTTP/1.0" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00[\x01\x00\x00W\x03\x03c\x16Ý=×u[~vDzø\xad{ÓÍÛ(.\x0f£$Cô\x05')
+80.85.85.235 - - [06/Sep/2022 05:40:13] " [  WcÝ=×u[~vDzø­{ÓÍÛ(.£$Côglï¬~O  " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad request version ('þÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì\xad\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00\x00\x16\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:13] " Ã  ¿cÝ=,kø>G4¢¢GZÓv¥Þ9 ®JxïpFác    þÿþþ c e  r  s 2 @ ¢ t 8 j £ÀBÀVÀCÀW D ½À  ÃÀ  f    ²À¦ ª  ³À§ «ÀfÀlÀgÀmÀÀÀÀÌ­ - ´ µ   w  x 3 gÀÀ¢  y 9 k   " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad request version ('Yjñh_\x00\x00\x1a\x13\x05\x13\x04\x13\x01\x13\x02\x13\x03À´Àµ\x00Ç\x00ÆÀ²À°À³À±\x01\x00\x00E\x00+\x00\x03\x02\x03\x04\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:13] "   cÝ=ÆÔª j²¢QC²"#Ç¯0oþYjñh_  À´Àµ Ç ÆÀ²À°À³À±  E +  " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:13] code 400, message Bad request version ('þÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì\xad\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00\x00\x16\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:13] " Ã  ¿cÝ=ÆUvèÅ@Ò0Q;iiªïZ²¥nØI*­    þÿþþ c e  r  s 2 @ ¢ t 8 j £ÀBÀVÀCÀW D ½À  ÃÀ  f    ²À¦ ª  ³À§ «ÀfÀlÀgÀmÀÀÀÀÌ­ - ´ µ   w  x 3 gÀÀ¢  y 9 k   " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('\x00/À´À\x9e\x00\x15\x00¥ÀrÀqÀZ\x00UÀ\x9bÀ\x9a\x00¦\x00,À')
+80.85.85.235 - - [06/Sep/2022 05:40:14] "N JcÝ=üÉz©ipÆ4¨N8¯ðÝ³0¶¯s&æ ÀÀ R i & NÀÀ©   O ZÀL g W  Ã  À$   ±À^ÀQÀ( ½Àc 	 © S |Ì®À°Àv 8 ´À @ À  j  a < À! 0À- ¸Ì© I À4Ì«  LÀ2  > b ' J "ÀS À] ¬À>Ài VÀÀ¢À=  ; F )  YÀÀ - «  A Àn  ÅÀU ÀÀÀ¨ À\ À  QÀ À?ÀÀKÀ< 1À¤ T Às ÀyÀuÀz º \À. ¹À	 ÀÀ G  À8À  Ç ÆÀ| ÀÀ ¨þþÀC  Ð ¶À  (À'ÐÐÌ­ ¢Ìª k ÀIÌ¨À 7ÌÀ7ÌÀÀÀ}ÀµÀÀ³ ¿À²À± À  wÀwÀkÀ®À­À¬À«ÀªÀ§ ³ §À0À£À_ ·À¡À  /À´À  ¥ÀrÀqÀZ UÀÀ ¦ ,À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] "GET / HTTP/1.1" 404 -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('\x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00\x00\x16\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:14] " Ã  ¿cÝ>9t_¶D:¦¢¸ÇâJRÊÚÈ/DguÙYÃ  ÀÀ£ ÀDÀRÀEÀS E ¾À|  ÄÀ}ÌªÌ     0 > ¤ 6 h ¥À>ÀXÀ?ÀY B »À  ÁÀ     1 ?   7 i ¡À@ÀTÀAÀU C ¼À~  ÂÀ      4 l ¦ :   " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('\x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00\x00\x16\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:14] " Ã  ¿cÝ>°XqlJ_Pº\1¹ðÀnr_4lÜºÀ:cXCp  ÀÀ£ ÀDÀRÀEÀS E ¾À|  ÄÀ}ÌªÌ     0 > ¤ 6 h ¥À>ÀXÀ?ÀY B »À  ÁÀ     1 ?   7 i ¡À@ÀTÀAÀU C ¼À~  ÂÀ      4 l ¦ :   " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('\\\x02\x00\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:14] " cÝ=ÎýÏA(fßÎß«¡Ðñ<öè*IÒ\  " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('\x00/À´À\x9e\x00\x15\x00¥ÀrÀqÀZ\x00UÀ\x9bÀ\x9a\x00¦\x00,À')
+80.85.85.235 - - [06/Sep/2022 05:40:14] "n jcÝ>+SHCÈjì=WLê|9"3;`äÿG ÀÀ R i & NÀÀ©   O ZÀL g W  Ã  À$   ±À^ÀQÀ( ½Àc 	 © S |Ì®À°Àv 8 ´À @ À  j  a < À! 0À- ¸Ì© I À4Ì«  LÀ2  > b ' J "ÀS À] ¬À>Ài VÀÀ¢À=  ; F )  YÀÀ - «  A Àn  ÅÀU ÀÀÀ¨ À\ À  QÀ À?ÀÀKÀ< 1À¤ T Às ÀyÀuÀz º \À. ¹À	 ÀÀ G  À8À  Ç ÆÀ| ÀÀ ¨þþÀC  Ð ¶À  (À'ÐÐÌ­ ¢Ìª k ÀIÌ¨À 7ÌÀ7ÌÀÀÀ}ÀµÀÀ³ ¿À²À± À  wÀwÀkÀ®À­À¬À«ÀªÀ§ ³ §À0À£À_ ·À¡À  /À´À  ¥ÀrÀqÀZ UÀÀ ¦ ,À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:14] code 400, message Bad request version ('À#À¬À®À+À')
+80.85.85.235 - - [06/Sep/2022 05:40:14] " Ã  ¿cÝ>y?øu9©ß,¨c´3®è¢ÄñUÎ   m §ÀFÀZÀGÀ[ F ¿À  ÅÀ   À²À°À³À±ÀÀ	À#À¬À®À+À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:18] code 400, message Bad HTTP/0.9 request type ('\x804\x01\x00\x02\x00\x1b\x00\x00\x00\x10\x00\x00\x00\x01\x00\x80\x05\x00\x80\x08\x00\x80\x04\x00\x80\x02\x00\x80\x03\x00\x80\x07\x00À\x06\x00@¢ñ\x82ó*')
+80.85.85.235 - - [06/Sep/2022 05:40:18] "4               À @¢ñó*	 è¯Rl58'Í" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:18] code 400, message Bad request version ('\x00\x1a\x01\x01\x02\x01\x03\x01\x04\x01\x04\x02\x04\x03\x04\x07\x04\x08\x06\x01\x06\x02\x06\x03\x06\x07\x06\x08')
+80.85.85.235 - - [06/Sep/2022 05:40:18] " y  ucÝ=ÿ®m½è7ý][(|Ì';È^³°>ãiÔ¾  ,  F Å À ¿ §ÀZ ¦ 4À l À[ÀGÀF m     :      " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:19] code 400, message Bad request version ('þÿþþ\x00c\x00e\x00\x11\x00r\x00\x13\x00s\x002\x00@\x00¢\x00t\x008\x00j\x00£ÀBÀVÀCÀW\x00D\x00½À\x80\x00\x87\x00ÃÀ\x81\x00\x12\x00f\x00\x99\x00\x8f\x00\x90\x00²À¦\x00ª\x00\x91\x00³À§\x00«ÀfÀlÀgÀmÀ\x96À\x90À\x97À\x91Ì\xad\x00-\x00´\x00µ\x00\x8e\x00\x14\x00w\x00\x16\x00x\x003\x00gÀ\x9eÀ¢\x00\x9e\x00y\x009\x00k\x01\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:19] "  «  § cÝ=úÇ§ÿL;£C4ßÕ	Zn¿F½Vôe    þÿþþ c e  r  s 2 @ ¢ t 8 j £ÀBÀVÀCÀW D ½À  ÃÀ  f    ²À¦ ª  ³À§ «ÀfÀlÀgÀmÀÀÀÀÌ­ - ´ µ   w  x 3 gÀÀ¢  y 9 k " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:24] code 400, message Bad request version ('\x979ô\x00\x00\x80\x00/\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:24] "  «  § cÝHí_Ùv(äY¶w¹õ'5¸o	Ìä9ô   / " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:25] code 400, message Bad request version ('À#À')
+80.85.85.235 - - [06/Sep/2022 05:40:25] "  «  § cÝI>e¡UÑ_®Õ¿A¼¢£b°ÞáË9ô	ÓÜ    1 ? 7 iÀ@ÀA C ¼  Â     4 l : mÀFÀG F ¿  Å  ÀÀ	À#À" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:35] code 400, message Bad request version ('\x01\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:35] code 400, message Bad request syntax ('\x0e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbbb0100000001')
+80.85.85.235 - - [06/Sep/2022 05:40:35] "  K  G cÝO·Î¥ HÎúÑZþÂ±éîèÀsCð    A º  À 	  ÀÀÀ"ÀÀÀ!ÀÀÀ  " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:35] "               bbbb0100000001" HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:35] code 400, message Bad request version ('\x007\x00i\x00¡À@ÀTÀAÀU\x00C\x00¼À~\x00\x86\x00ÂÀ\x7f\x00\x0f\x00\x98\x00\x19\x00\x17\x00\x1b\x004\x00l\x00¦\x00:\x01\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:35] "  «  § cÝCÌÃûðíÂZKÅË89g¡",aýTÝ  ÀÀ£ ÀDÀRÀEÀS E ¾À|  ÄÀ}ÌªÌ     0 > ¤ 6 h ¥À>ÀXÀ?ÀY B »À  ÁÀ     1 ?   7 i ¡À@ÀTÀAÀU C ¼À~  ÂÀ      4 l ¦ : " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:35] code 400, message Bad request version ('\x00%\x00!\x00\x8b\x00\x8c\x00®\x00\x8d\x00¯ÀdÀeÀ\x94À\x95\x00b\x00a\x00\x08\x00\x06\x00\x93\x00\x94\x00¶\x00\x95\x00·ÀhÀiÀ\x98À\x99\x00|\x00}\x00<\x00~\x005\x00=À<À=\x01\x00')
+80.85.85.235 - - [06/Sep/2022 05:40:35] "  «  § cÝI_	ßo&¼u!ð¼æÜB`²mñs&ÍÒ  ÀtÀu I N MÀÀÀ)ÀÀ*ÀNÀOÀxÀy [À ZÀÀ Y R Q V U ) & * ' #  "  % !   ®  ¯ÀdÀeÀÀ b a     ¶  ·ÀhÀiÀÀ | } < ~ 5 =À<À= " HTTPStatus.BAD_REQUEST -
+80.85.85.235 - - [06/Sep/2022 05:40:35] code 400, message Bad request version ('\x00\x1a\x01\x01\x02\x01\x03\x01\x04\x01\x04\x02\x04\x03\x04\x07\x04\x08\x06\x01\x06\x02\x06\x03\x06\x07\x06\x08')
+80.85.85.235 - - [06/Sep/2022 05:40:35] " Í  ÉcÝG¼ö¹ÚkõóàwÁ¬Í'<Wd(êóuE.   g Ã ½ 8 ´ @ j ÀSÀ¢ - «  ÀÀ| ÀC Ì­ ¢Ìª k À}À  wÀ§ ³À£À ÀÀ fÀ y  s tÀÀÀBÀmÀlÀgÀf ªÀWÀV  2ÀEÀD µ  ÀR ¾  ÄÀ¦ ²      " HTTPStatus.BAD_REQUEST -
+35.87.167.236 - - [06/Sep/2022 08:55:50] "GET / HTTP/1.1" 404 -
+85.208.214.88 - - [06/Sep/2022 11:51:04] code 400, message Bad request syntax ('\x16\x03\x01\x00²\x01\x00\x00®\x03\x03\x05È')
+85.208.214.88 - - [06/Sep/2022 11:51:04] " ²  ®È" HTTPStatus.BAD_REQUEST -
+85.208.214.88 - - [06/Sep/2022 11:51:16] "GET / HTTP/1.1" 404 -
+85.208.214.88 - - [06/Sep/2022 11:51:16] "GET /favicon.ico HTTP/1.1" 404 -
+85.208.214.88 - - [06/Sep/2022 11:51:16] "GET /robots.txt HTTP/1.1" 404 -
+85.208.214.88 - - [06/Sep/2022 11:51:17] "GET /sitemap.xml HTTP/1.1" 404 -
+192.241.214.48 - - [07/Sep/2022 05:10:30] code 400, message Bad request syntax ('MGLNDD_121.134.238.181_9001')
+192.241.214.48 - - [07/Sep/2022 05:10:30] "MGLNDD_121.134.238.181_9001" HTTPStatus.BAD_REQUEST -
+91.240.118.187 - - [07/Sep/2022 10:58:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+91.240.118.187 - - [07/Sep/2022 10:58:43] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+161.189.192.94 - - [07/Sep/2022 20:04:27] code 400, message Bad request version ('í\xads±û½GâEïK`)\x07ã\x88Á·\x12\x07ºöa§¦¾ö[')
+161.189.192.94 - - [07/Sep/2022 20:04:27] "L   111ÀÛ9Îe y¥Pýg"|Üó£ÏôùÜ#ÚÇ¨PkØH Ã	í­s±û½GâEïK`)ãÁ·ºöa§¦¾ö[" HTTPStatus.BAD_REQUEST -
+194.165.16.10 - - [07/Sep/2022 21:32:37] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+194.165.16.10 - - [07/Sep/2022 21:32:37] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+194.165.16.10 - - [07/Sep/2022 21:32:37] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+194.165.16.10 - - [07/Sep/2022 21:32:37] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+165.232.187.233 - - [07/Sep/2022 21:37:54] "GET / HTTP/1.1" 404 -
+143.244.128.173 - - [07/Sep/2022 21:38:07] "GET / HTTP/1.1" 404 -
+192.241.210.210 - - [08/Sep/2022 10:44:49] code 400, message Bad request syntax ('MGLNDD_121.134.238.181_9001')
+192.241.210.210 - - [08/Sep/2022 10:44:49] "MGLNDD_121.134.238.181_9001" HTTPStatus.BAD_REQUEST -
+77.83.36.32 - - [08/Sep/2022 21:21:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+77.83.36.32 - - [08/Sep/2022 21:21:38] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:35:11] "GET / HTTP/1.1" 404 -
+152.89.196.62 - - [09/Sep/2022 02:54:49] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:49] "            Â SCRIPT_NAME/usr/bin/phar.pharSERVER_SOFTWAREphp/fcgiclient	REMOTE_ADDR127.0.0.1	SERVER_ADDR127.0.0.1SERVER_PORT80SERVER_PROTOCOLHTTP/1.1REMOTE_PORT9985	SERVER_NAMElocalhostCONTENT_TYPEapplication/textSCRIPT_FILENAME/usr/bin/phar.pharCONTENT_LENGTH52GATEWAY_INTERFACEFastCGI/1.0REQUEST_METHODPOST QUERY_STRINGDOCUMENT_ROOT/	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:49] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:49] "            Ì CONTENT_TYPEapplication/textSERVER_SOFTWAREphp/fcgiclient	REMOTE_ADDR127.0.0.1REMOTE_PORT9985	SERVER_ADDR127.0.0.1SERVER_PROTOCOLHTTP/1.1CONTENT_LENGTH52 QUERY_STRINGDOCUMENT_ROOT/	SERVER_NAMElocalhostPHP_ADMIN_VALUEallow_url_include = OnREQUEST_METHODPOSTSCRIPT_FILENAME/usr/share/php/PEAR.phpSCRIPT_NAME/usr/share/php/PEAR.phpSERVER_PORT80	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:49] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:49] "            Ô SERVER_PROTOCOLHTTP/1.1CONTENT_LENGTH52 QUERY_STRINGSERVER_PORT80REQUEST_METHODPOSTSCRIPT_FILENAME/usr/local/lib/php/PEAR.phpCONTENT_TYPEapplication/textPHP_ADMIN_VALUEallow_url_include = OnREMOTE_PORT9985	SERVER_NAMElocalhostDOCUMENT_ROOT/SERVER_SOFTWAREphp/fcgiclient	REMOTE_ADDR127.0.0.1	SERVER_ADDR127.0.0.1	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:50] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:50] "            ä SERVER_SOFTWAREphp/fcgiclient	REMOTE_ADDR127.0.0.1	SERVER_ADDR127.0.0.1SERVER_PROTOCOLHTTP/1.1GATEWAY_INTERFACEFastCGI/1.0 QUERY_STRINGDOCUMENT_ROOT/CONTENT_LENGTH52REQUEST_METHODPOST#SCRIPT_NAME/opt/bitnami/php/lib/php/System.php	SERVER_NAMElocalhostSERVER_PORT80	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:50] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:50] "            Ø  REQUEST_METHODPOST QUERY_STRINGSCRIPT_FILENAME/usr/local/lib/php/System.phpDOCUMENT_ROOT/CONTENT_TYPEapplication/textCONTENT_LENGTH52PHP_ADMIN_VALUEallow_url_include = OnGATEWAY_INTERFACEFastCGI/1.0REMOTE_PORT9985	SERVER_ADDR127.0.0.1SERVER_PORT80	SERVER_NAMElocalhostSCRIPT_NAME/usr/local/lib/php/System.phpSERVER_SOFTWAREphp/fcgiclient	REMOTE_ADDR127.0.0.1SERVER_PROTOCOLHTTP/1.1	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:51] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:51] "            Ì SERVER_SOFTWAREphp/fcgiclientSERVER_PORT80	SERVER_NAMElocalhostSERVER_PROTOCOLHTTP/1.1CONTENT_TYPEapplication/text	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:51] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:51] "            º SERVER_PROTOCOLHTTP/1.1SCRIPT_FILENAME/app/index.phpSERVER_PORT80REMOTE_PORT9985	REMOTE_ADDR127.0.0.1PHP_ADMIN_VALUEallow_url_include = OnREQUEST_METHODPOSTDOCUMENT_ROOT/ QUERY_STRINGSERVER_SOFTWAREphp/fcgiclient	SERVER_ADDR127.0.0.1	SERVER_NAMElocalhostCONTENT_TYPEapplication/textCONTENT_LENGTH52GATEWAY_INTERFACEFastCGI/1.0SCRIPT_NAME/app/index.php	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:51] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:51] "            È  SCRIPT_NAME/app/public/index.php	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+152.89.196.62 - - [09/Sep/2022 02:54:52] code 400, message Bad request version ('php://input')
+152.89.196.62 - - [09/Sep/2022 02:54:52] "            Î PHP_ADMIN_VALUEallow_url_include = OnREQUEST_METHODPOSTSCRIPT_FILENAME/usr/local/bin/phar.pharSERVER_SOFTWAREphp/fcgiclientREMOTE_PORT9985	SERVER_ADDR127.0.0.1SERVER_PORT80CONTENT_LENGTH52GATEWAY_INTERFACEFastCGI/1.0SCRIPT_NAME/usr/local/bin/phar.phar QUERY_STRING	SERVER_NAMElocalhostSERVER_PROTOCOLHTTP/1.1CONTENT_TYPEapplication/text	REMOTE_ADDR127.0.0.1	4PHP_VALUEauto_prepend_file = php://input" HTTPStatus.BAD_REQUEST -
+192.241.213.108 - - [09/Sep/2022 12:09:30] code 400, message Bad request syntax ('MGLNDD_121.134.238.181_9001')
+192.241.213.108 - - [09/Sep/2022 12:09:30] "MGLNDD_121.134.238.181_9001" HTTPStatus.BAD_REQUEST -
+192.241.213.16 - - [10/Sep/2022 12:48:05] code 400, message Bad request syntax ('MGLNDD_121.134.238.181_9001')
+192.241.213.16 - - [10/Sep/2022 12:48:05] "MGLNDD_121.134.238.181_9001" HTTPStatus.BAD_REQUEST -
+141.98.10.78 - - [10/Sep/2022 15:41:48] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+141.98.10.78 - - [10/Sep/2022 15:41:48] "Z¥     " HTTPStatus.BAD_REQUEST -
+162.142.125.221 - - [10/Sep/2022 16:31:58] code 400, message Bad request version ('À\x14À')
+162.142.125.221 - - [10/Sep/2022 16:31:58] " î  êøpOßGc?¿T[ÎdgÚóOïg³oÎ0sçþ~$0 £Ð¥aøÖ#(Ó9¶ÈÉZRÞ7+xPðÛô`omE½² &Ì¨Ì©À/À0À+À,ÀÀ	ÀÀ" HTTPStatus.BAD_REQUEST -
+162.142.125.221 - - [10/Sep/2022 16:31:59] "GET / HTTP/1.1" 404 -
+162.142.125.221 - - [10/Sep/2022 16:32:00] "GET / HTTP/1.1" 404 -
+162.142.125.221 - - [10/Sep/2022 16:32:00] code 505, message Invalid HTTP version (2.0)
+162.142.125.221 - - [10/Sep/2022 16:32:00] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+80.66.88.19 - - [11/Sep/2022 06:14:08] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00É·\x00\x00')
+80.66.88.19 - - [11/Sep/2022 06:14:08] " 4           ( ÿ U   MSSQLServer É·  " HTTPStatus.BAD_REQUEST -
+154.89.5.105 - - [11/Sep/2022 11:46:04] "GET / HTTP/1.0" 404 -
+192.241.204.209 - - [11/Sep/2022 15:45:08] code 400, message Bad request syntax ('MGLNDD_121.134.238.181_9001')
+192.241.204.209 - - [11/Sep/2022 15:45:08] "MGLNDD_121.134.238.181_9001" HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:19:57] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00ö\x8aÞo\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:19:57] "	  öÞo    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:19:58] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:19:58] "	   .Ã?    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:19:59] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00#èÀI\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:19:59] "	  #èÀI    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:00] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:00] "	  6Õ    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:01] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:01] "	  l#    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:02] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:02] "	  ûªn    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:03] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00²ì\x06?\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:03] "	  ²ì?    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:04] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00\x07HY;\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:04] "	  HY;    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:05] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00\x04#ªl\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:05] "	  #ªl    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:06] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00ô/|?\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:06] "	  ô/|?    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:07] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00ì;A%\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:07] "	  ì;A%    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:08] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:08] "	      Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:09] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00¹(\x93W\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:09] "	  ¹(W    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:10] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:10] "	   ^ ]    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:11] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00º¨Ì\x11\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:11] "	  º¨Ì    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:12] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00\x86«2M\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:12] "	  «2M    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:13] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00Ã¬\x07?\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:13] "	  Ã¬?    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:14] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00>öGk\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:14] "	  >öGk    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:15] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00\x05J´\\\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:15] "	  J´\    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:16] code 400, message Bad HTTP/0.9 request type ('\x01\x00\x00ñ\x80Ï\x16\x00\x00\x00\x00Ô\x07\x00\x00\x00\x00\x00\x00admin.$cmd\x00\x00\x00\x00\x00ÿÿÿÿâ\x00\x00\x00\x10ismaster\x00\x01\x00\x00\x00\x08helloOk\x00\x01\x03client\x00½\x00\x00\x00\x03driver\x00*\x00\x00\x00\x02name\x00\x08\x00\x00\x00PyMongo\x00\x02version\x00\x06\x00\x00\x004.2.0\x00\x00\x03os\x00]\x00\x00\x00\x02type\x00\x06\x00\x00\x00Linux\x00\x02name\x00\x06\x00\x00\x00Linux\x00\x02architecture\x00\x07\x00\x00\x00x86_64\x00\x02version\x00\x12\x00\x00\x005.4.0-125-generic\x00\x00\x02platform\x00\x17\x00\x00\x00CPython')
+45.55.57.126 - - [11/Sep/2022 20:20:16] "	  ñÏ    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.55.57.126 - - [11/Sep/2022 20:20:17] code 400, message Bad request version ('3.8.10.final.0\x00\x00\x00')
+45.55.57.126 - - [11/Sep/2022 20:20:17] "	  ì]i    Ô      admin.$cmd     ÿÿÿÿâ   ismaster    helloOk client ½   driver *   name    PyMongo version    4.2.0  os ]   type    Linux name    Linux architecture    x86_64 version    5.4.0-125-generic  platform    CPython 3.8.10.final.0   " HTTPStatus.BAD_REQUEST -
+45.227.254.53 - - [11/Sep/2022 22:20:52] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+45.227.254.53 - - [11/Sep/2022 22:20:52] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+45.227.254.53 - - [11/Sep/2022 22:20:53] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+45.227.254.53 - - [11/Sep/2022 22:20:53] "  ,'à     Cookie: mstshash=Domain" HTTPStatus.BAD_REQUEST -
+223.71.167.165 - - [11/Sep/2022 22:43:51] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03(\x88×ü5'&PQ±ÀvÉ)n\x10,V\x95SxÀÐD\x92ÐB³Ì\x89\x81\x86\x00\x00Ú\x00\x05\x00\x04\x00\x02\x00\x01\x00\x16\x003\x009\x00:\x00\x18\x005\x00")
+223.71.167.165 - - [11/Sep/2022 22:43:51] "  ü(×ü5'&PQ±ÀvÉ)n,VSxÀÐDÐB³Ì  Ú      3 9 :  5 " HTTPStatus.BAD_REQUEST -
+223.71.167.165 - - [11/Sep/2022 22:43:51] "GET / HTTP/1.1" 404 -
+94.102.61.49 - - [11/Sep/2022 23:09:35] "GET / HTTP/1.1" 404 -
+36.156.28.130 - - [12/Sep/2022 04:10:45] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?GÃ\x97Ã·Âº,Ã®ÃªÂ²`~Ã³\x00Ã½Â\x82{Â¹Ã\x95Â\x96Ã\x88wÂ\x9bÃ¦Ã\x84Ã\x9b<=Ã\x9boÃ¯\x10n\x00\x00(\x00\x16\x00\x13\x00')
+36.156.28.130 - - [12/Sep/2022 04:10:45] "  S  O ?GÃÃ·Âº,Ã®ÃªÂ²`~Ã³ Ã½Â{Â¹ÃÂÃwÂÃ¦ÃÃ<=ÃoÃ¯n  (   " HTTPStatus.BAD_REQUEST -
+36.156.28.130 - - [12/Sep/2022 04:10:45] "GET /favicon.ico HTTP/1.1" 404 -
+36.156.28.130 - - [12/Sep/2022 04:10:45] "GET /robots.txt HTTP/1.1" 404 -
+36.156.28.130 - - [12/Sep/2022 04:10:45] "GET /.well-known/security.txt HTTP/1.1" 404 -
+185.220.100.243 - - [12/Sep/2022 05:14:12] "GET / HTTP/1.1" 404 -

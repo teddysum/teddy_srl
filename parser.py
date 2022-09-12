@@ -23,7 +23,7 @@ from torch import nn
 from torch.optim import Adam
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 
 
 # In[3]:
@@ -31,6 +31,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 from teddy_srl import srl_model
 from teddy_srl import preprocessor
+from teddy_srl import conll2textae
 
 
 # In[4]:
@@ -215,10 +216,12 @@ class srl_parser():
             conll.append(instance)
         
         graph = conll2graph(conll)
+        textae = conll2textae.get_textae(conll)
         
         result = {}
         result['conll'] = conll
         result['graph'] = graph
+        result['textae'] = textae
         
         
         

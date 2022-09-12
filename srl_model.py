@@ -17,9 +17,11 @@ from torch.optim import Adam
 import glob
 import os
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from keras.preprocessing.sequence import pad_sequences
-from pytorch_pretrained_bert import BertTokenizer, BertConfig, BertModel
-from pytorch_pretrained_bert import BertForTokenClassification, BertAdam
+#from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
+#from pytorch_pretrained_bert import BertTokenizer, BertConfig, BertModel
+#from pytorch_pretrained_bert import BertForTokenClassification, BertAdam
+from transformers import BertTokenizer, BertConfig, BertModel
 from tqdm import tqdm, trange
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 n_gpu = torch.cuda.device_count()

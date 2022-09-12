@@ -151,7 +151,7 @@ python restApp.py --port {port number} --model {model path}
 ```
 **Example**
 ```
-python restApp.py --port 9001 --model ./models/en
+python restApp.py --port 9001 --model ./models/teddy_srl
 ```
 Then, you can use it with the `POST` method to the url `XXX.XXX.XXX.XXX:9001/teddy_srl`. `XXX.XXX.XXX.XXX` is your IP address. 
 

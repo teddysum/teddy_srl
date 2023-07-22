@@ -181,7 +181,6 @@ Changki Lee, Soojong Lim, Hyunki Kim. Korean Semantic Role Labeling Using Struct
 Jangseong Bae, Changki Lee, Hyunki Kim. Korean Semantic Role Labeling with Highway BiLSTM-CRFs. HCLT, 2017, 159-162. (in Korean)
 
 ## Licenses
-## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 * If you want to use this resource for commercial purposes, please get in touch with us by email
 

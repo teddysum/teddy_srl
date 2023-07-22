@@ -1,4 +1,5 @@
 # Teddy_SRL
+Korean Semantic Role Labeling
 
 ## About
 Teddy_SRL is a **span-based** semantic role labeling (SRL) module for Korean text. 

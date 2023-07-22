@@ -1,5 +1,5 @@
 # Teddy_SRL
-Korean Semantic Role Labeling
+**Korean Semantic Role Labeling (SRL) tool made by Teddysum.**
 
 ## About
 Teddy_SRL is a **span-based** semantic role labeling (SRL) module for Korean text. 
